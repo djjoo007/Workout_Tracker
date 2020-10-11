@@ -1,3 +1,4 @@
+//Server Dependencies
 const express = require('express');
 const mongoose = require('mongoose');
 
@@ -10,12 +11,12 @@ app.use(express.json());
 
 app.use(express.static('public'));
 
-mongoose.connect(process.env.MONGODB_UR || 'mongodb://localhost/??', {
+mongoose.connect(process.env.MONGODB_UR || 'mongodb://localhost/workout', {
     useNewUrlParser: true,
     useFindAndModify: false
 });
 
-//routes
+//Routes
 app.use(require('./routes/api.js'));
 
 app.listen(PORT, () => {
