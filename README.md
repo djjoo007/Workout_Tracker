@@ -27,7 +27,7 @@ The user will be able to:
 
 ## Screenshots
 ![](images/fitnesstracker.png)
-![](images/workoutdashboard.jpg)
+![](images/workoutdashboard.png)
 
 ## Links to Deployed Site
 https://calm-bastion-11804.herokuapp.com/
