@@ -1,7 +1,6 @@
 //Server Dependencies
 const express = require('express');
 const mongoose = require('mongoose');
-const morgan = require('morgan');
 
 const PORT = process.env.PORT || 3000;
 
@@ -25,9 +24,6 @@ mongoose.connect(
 //Routes
 app.use(require('./routes/api-routes.js'));
 app.use(require('./routes/html-routes.js'));
-
-//Morgan
-app.use(morgan('dev'));
 
 app.listen(PORT, () => {
     console.log(`App running on ${PORT}!`);
