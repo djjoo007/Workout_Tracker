@@ -24,19 +24,15 @@ const workoutSchema = new Schema ({
     },
     weight: {
         type: Number,
-        // required: 'Enter total weight lifted.'
     },
     sets: {
         type: Number,
-        // required: 'Enter total sets performed.'
     },
     reps: {
         type: Number,
-        // required: 'Enter total reps performed.'
     },
     distance: {
         type: Number,
-        // required: 'Enter total distance covered.'
     }}]
 }, {
     toJSON:{
